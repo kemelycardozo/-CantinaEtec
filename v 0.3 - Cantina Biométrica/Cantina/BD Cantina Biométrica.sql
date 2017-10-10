@@ -15,33 +15,55 @@ create table Cliente
     cep VARCHAR(9) NOT NULL,
     telefone VARCHAR (14) NOT NULL,
     celular VARCHAR (15) NOT NULL,
-    cargo VARCHAR(11) NOT NULL
+    funcao VARCHAR(15) NOT NULL
 );
-
 
 create table Produto
 (
-	id_produto DECIMAL PRIMARY KEY,
+	id_produto INT PRIMARY KEY,
     nome VARCHAR(45) NOT NULL,
     categoria VARCHAR (30) NOT NULL,
-    valor DECIMAL(4,2) NOT NULL
+    valor DOUBLE NOT NULL
 );
 
 create table Venda
 (
 	id_venda INT PRIMARY KEY,
-    cliente_cpf VARCHAR(11)
+    cpf VARCHAR(11),
+    valor DOUBLE NOT NULL,
+    data DATE NOT NULL,
+    FOREIGN KEY (cpf) REFERENCES Cliente(cpf)
 );
 
 create table Produto_Venda
 (
-	id_produto DECIMAL,
+	id_produto INT,
     id_venda INT,
     FOREIGN KEY (id_produto) REFERENCES Produto(id_produto),
     FOREIGN KEY (id_venda) REFERENCES Venda(id_venda)
 );
 
-select * from Cliente;
+create table Recarga
+(
+	id_recarga INT PRIMARY KEY,
+    valor DOUBLE NOT NULL,
+    data DATE NOT NULL,
+    cpf VARCHAR(14),
+    FOREIGN KEY (cpf) REFERENCES Cliente(cpf)
+);
+
+create table Lancamento
+(
+	id_lancamento INT PRIMARY KEY,
+    valor DOUBLE NOT NULL,
+    data DATE NOT NULL,
+    id_venda INT NOT NULL,
+    id_recarga INT NOT NULL,
+    FOREIGN KEY (id_venda) REFERENCES Venda(id_venda),
+    FOREIGN KEY (id_recarga) REFERENCES Recarga(id_recarga)
+);
+
+
 
 
 

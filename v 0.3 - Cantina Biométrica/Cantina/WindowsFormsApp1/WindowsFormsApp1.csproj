@@ -47,6 +47,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="clsCliente.cs" />
+    <Compile Include="clsLancamento.cs" />
+    <Compile Include="clsProduto.cs" />
+    <Compile Include="clsRecarga.cs" />
+    <Compile Include="clsSaldo.cs" />
+    <Compile Include="clsVenda.cs" />
     <Compile Include="Dados.cs" />
     <Compile Include="Menu.cs">
       <SubType>Form</SubType>
@@ -153,6 +158,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\seta esquerda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icone Voltar.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Botoes_5053_arrow_left_48.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

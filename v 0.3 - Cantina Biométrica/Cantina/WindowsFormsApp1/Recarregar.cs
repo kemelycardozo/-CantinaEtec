@@ -17,12 +17,19 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
-     
+        clsRecarga ObjRecarga = new clsRecarga();
 
         private void btnVolta_Click(object sender, EventArgs e)
         {
             Menu m = new Menu();
             m.Show();
         }
+
+        private void btnRecarregar_Click(object sender, EventArgs e)
+        {
+            ObjRecarga.Valor = double.Parse(txtValorRecarga.Text);
+            ObjRecarga.Data = dtRecarga.Text;
+        }
+
     }
 }

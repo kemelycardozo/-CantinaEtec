@@ -24,7 +24,7 @@ namespace WindowsFormsApp1
             objC.Nome = txtNome.Text;
             objC.Endereco = txtEndereco.Text;
             objC.Complemento = txtComplemento.Text;
-            objC.Datanasc = txtDtNasc.Text;
+            objC.Datanasc = dtNasc.Text;
             objC.Cpf = txtCPF.Text;
             objC.Rg = txtRG.Text;
             objC.Bairro = txtBairro.Text;
@@ -32,18 +32,13 @@ namespace WindowsFormsApp1
             objC.Cep = txtCEP.Text;
             objC.Telefone = txtTelefone.Text;
             objC.Celular = txtCelular.Text;
-            objC.Cargo = cboCargo.Text;
+            objC.Funcao = cboFuncao.Text;
             objC.Cidade = cboCidade.Text;
         }
 
         private void Cadastrar_Load(object sender, EventArgs e)
         {
 
-        }
-
-        private void label15_Click(object sender, EventArgs e)
-        {
-            
         }
 
         private void btnCadastrar_Click(object sender, EventArgs e)
@@ -57,5 +52,6 @@ namespace WindowsFormsApp1
             Menu m = new Menu();
             m.Show();
         }
+
     }
 }

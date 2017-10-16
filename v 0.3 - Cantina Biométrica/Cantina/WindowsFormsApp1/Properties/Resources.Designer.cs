@@ -19,7 +19,7 @@ namespace WindowsFormsApp1.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -93,6 +93,16 @@ namespace WindowsFormsApp1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Botoes_5053_arrow_left_48 {
+            get {
+                object obj = ResourceManager.GetObject("Botoes_5053_arrow_left_48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap flat_home_icon_354084 {
             get {
                 object obj = ResourceManager.GetObject("flat-home-icon_354084", resourceCulture);
@@ -156,6 +166,16 @@ namespace WindowsFormsApp1.Properties {
         internal static System.Drawing.Bitmap house_512 {
             get {
                 object obj = ResourceManager.GetObject("house-512", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Icone_Voltar {
+            get {
+                object obj = ResourceManager.GetObject("Icone Voltar", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

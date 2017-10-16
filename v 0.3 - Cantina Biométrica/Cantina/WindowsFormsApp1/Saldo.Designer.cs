@@ -30,15 +30,15 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnVolta = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dtgConsultarSaldo = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgConsultarSaldo)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.btnVolta);
-            this.panel1.Controls.Add(this.dataGridView1);
+            this.panel1.Controls.Add(this.dtgConsultarSaldo);
             this.panel1.Location = new System.Drawing.Point(20, 20);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(825, 520);
@@ -58,13 +58,13 @@
             this.btnVolta.UseVisualStyleBackColor = false;
             this.btnVolta.Click += new System.EventHandler(this.btnVolta_Click);
             // 
-            // dataGridView1
+            // dtgConsultarSaldo
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(34, 34);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(741, 319);
-            this.dataGridView1.TabIndex = 96;
+            this.dtgConsultarSaldo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgConsultarSaldo.Location = new System.Drawing.Point(34, 34);
+            this.dtgConsultarSaldo.Name = "dtgConsultarSaldo";
+            this.dtgConsultarSaldo.Size = new System.Drawing.Size(741, 319);
+            this.dtgConsultarSaldo.TabIndex = 96;
             // 
             // Saldo
             // 
@@ -78,14 +78,14 @@
             this.Text = "Saldo";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgConsultarSaldo)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dtgConsultarSaldo;
         private System.Windows.Forms.Button btnVolta;
     }
 }

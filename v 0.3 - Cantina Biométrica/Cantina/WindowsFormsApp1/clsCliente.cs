@@ -15,7 +15,7 @@ namespace WindowsFormsApp1
 
         #region Atributos da Tabela Cliente
 
-        private string cep, rg, cpf, telefone, celular, numero, datanasc, endereco, bairro, nome, cidade, complemento, cargo;
+        private string cep, rg, cpf, telefone, celular, numero, datanasc, endereco, bairro, nome, cidade, complemento, funcao;
 
         public string Cep { get => cep; set => cep = value; }
         public string Rg { get => rg; set => rg = value; }
@@ -29,7 +29,7 @@ namespace WindowsFormsApp1
         public string Nome { get => nome; set => nome = value; }
         public string Cidade { get => cidade; set => cidade = value; }
         public string Complemento { get => complemento; set => complemento = value; }
-        public string Cargo { get => cargo; set => cargo = value; }
+        public string Funcao { get => funcao; set => funcao = value; }
 
 
 
@@ -42,8 +42,8 @@ namespace WindowsFormsApp1
             {
 
                 objDados.ConvertSqlToInt(@"INSERT Cliente  
-                    (cpf, rg, nome, datanasc, endereco, numero, bairro, complemento, cidade, cep, telefone, celular, cargo) 
-                    VALUES(@cpf, @rg, @nome, @datanasc, @endereco, @numero, @bairro, @complemento, @cidade, @cep, @telefone, @celular, @cargo)",
+                    (cpf, rg, nome, datanasc, endereco, numero, bairro, complemento, cidade, cep, telefone, celular, funcao) 
+                    VALUES(@cpf, @rg, @nome, @datanasc, @endereco, @numero, @bairro, @complemento, @cidade, @cep, @telefone, @celular, @funcao)",
                     new MySqlParameter("@cpf", Cpf),
                     new MySqlParameter("@rg", Rg),
                     new MySqlParameter("@nome", Nome),
@@ -56,8 +56,7 @@ namespace WindowsFormsApp1
                     new MySqlParameter("@cep", Cep),
                     new MySqlParameter("@telefone", Telefone),
                     new MySqlParameter("@celular", Celular),
-                    new MySqlParameter("@cargo", Cargo)
-
+                    new MySqlParameter("@funcao", Funcao )
             );
 
                 MessageBox.Show("Cadastro realizada!");

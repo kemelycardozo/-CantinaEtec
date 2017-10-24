@@ -24,6 +24,7 @@ namespace WindowsFormsApp1
                     {
                         Menu m = new Menu();
                         m.Show();
+                        
                     }
                     else
                     {
@@ -32,6 +33,7 @@ namespace WindowsFormsApp1
                         txtSenha.Clear();
                         txtLogin.Focus();
                     }
+           
                 }
         #endregion
 

@@ -21,6 +21,7 @@ namespace WindowsFormsApp1
         {
             Cadastrar c = new Cadastrar();
             c.Show();
+            Close();
         }
 
         private void btnVenda_Click(object sender, EventArgs e)
@@ -52,6 +53,12 @@ namespace WindowsFormsApp1
             
             Application.Exit();
             
+        }
+
+        private void btnCadastrarProduto_Click(object sender, EventArgs e)
+        {
+            CadastrarProduto cp = new CadastrarProduto();
+            cp.Show();
         }
     }
 }

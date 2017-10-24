@@ -33,6 +33,7 @@
             this.btnVenda = new System.Windows.Forms.Button();
             this.btnCadastrar = new System.Windows.Forms.Button();
             this.btnSaldo = new System.Windows.Forms.Button();
+            this.btnCadastrarProduto = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
@@ -45,6 +46,7 @@
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.Controls.Add(this.btnCadastrarProduto);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.btnRecarregar);
             this.panel1.Controls.Add(this.btnVenda);
@@ -63,7 +65,7 @@
             this.btnRecarregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRecarregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRecarregar.ForeColor = System.Drawing.Color.DarkGreen;
-            this.btnRecarregar.Location = new System.Drawing.Point(349, 281);
+            this.btnRecarregar.Location = new System.Drawing.Point(451, 129);
             this.btnRecarregar.Name = "btnRecarregar";
             this.btnRecarregar.Size = new System.Drawing.Size(172, 70);
             this.btnRecarregar.TabIndex = 43;
@@ -79,7 +81,7 @@
             this.btnVenda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVenda.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVenda.ForeColor = System.Drawing.Color.DarkGreen;
-            this.btnVenda.Location = new System.Drawing.Point(161, 281);
+            this.btnVenda.Location = new System.Drawing.Point(451, 30);
             this.btnVenda.Name = "btnVenda";
             this.btnVenda.Size = new System.Drawing.Size(172, 70);
             this.btnVenda.TabIndex = 42;
@@ -95,7 +97,7 @@
             this.btnCadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCadastrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCadastrar.ForeColor = System.Drawing.Color.DarkGreen;
-            this.btnCadastrar.Location = new System.Drawing.Point(161, 200);
+            this.btnCadastrar.Location = new System.Drawing.Point(36, 30);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(172, 70);
             this.btnCadastrar.TabIndex = 40;
@@ -111,7 +113,7 @@
             this.btnSaldo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSaldo.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSaldo.ForeColor = System.Drawing.Color.DarkGreen;
-            this.btnSaldo.Location = new System.Drawing.Point(349, 200);
+            this.btnSaldo.Location = new System.Drawing.Point(36, 129);
             this.btnSaldo.Name = "btnSaldo";
             this.btnSaldo.Size = new System.Drawing.Size(172, 70);
             this.btnSaldo.TabIndex = 41;
@@ -119,11 +121,27 @@
             this.btnSaldo.UseVisualStyleBackColor = false;
             this.btnSaldo.Click += new System.EventHandler(this.btnSaldo_Click);
             // 
+            // btnCadastrarProduto
+            // 
+            this.btnCadastrarProduto.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnCadastrarProduto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(205)))), ((int)(((byte)(69)))));
+            this.btnCadastrarProduto.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.btnCadastrarProduto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCadastrarProduto.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCadastrarProduto.ForeColor = System.Drawing.Color.DarkGreen;
+            this.btnCadastrarProduto.Location = new System.Drawing.Point(36, 227);
+            this.btnCadastrarProduto.Name = "btnCadastrarProduto";
+            this.btnCadastrarProduto.Size = new System.Drawing.Size(172, 70);
+            this.btnCadastrarProduto.TabIndex = 45;
+            this.btnCadastrarProduto.Text = "Cadastrar Produto";
+            this.btnCadastrarProduto.UseVisualStyleBackColor = false;
+            this.btnCadastrarProduto.Click += new System.EventHandler(this.btnCadastrarProduto_Click);
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.Image = global::WindowsFormsApp1.Properties.Resources._678069_sign_error_256;
-            this.pictureBox1.Location = new System.Drawing.Point(925, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(912, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(34, 23);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -135,7 +153,7 @@
             // 
             this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox2.Image = global::WindowsFormsApp1.Properties.Resources.Cantinex;
-            this.pictureBox2.Location = new System.Drawing.Point(251, 13);
+            this.pictureBox2.Location = new System.Drawing.Point(247, 77);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(169, 181);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -169,6 +187,7 @@
         private System.Windows.Forms.Button btnSaldo;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button btnCadastrarProduto;
     }
 }
 

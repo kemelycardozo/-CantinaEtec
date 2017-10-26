@@ -25,12 +25,24 @@ namespace WindowsFormsApp1
         private void btnIncluir_Click(object sender, EventArgs e)
         {
             clsCadastrarProduto objCadasProd = new clsCadastrarProduto();
-            objCadasProd.Id_produto = int.Parse(txtCodProduto.Text);
             objCadasProd.Nome = txtNomeProduto.Text;
             objCadasProd.Categoria = cbmCategoriaProduto.Text;
             objCadasProd.Valor = double.Parse(txtValorProduto.Text);
             objCadasProd.Incluir();
             
+        }
+
+        private void txtNomeProduto_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnVolta_Click(object sender, EventArgs e)
+        {
+            Menu m = new Menu();
+            m.Show();
+
+            this.Close();
         }
     }
 }

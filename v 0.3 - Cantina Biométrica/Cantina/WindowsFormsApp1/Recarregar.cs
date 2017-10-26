@@ -23,6 +23,7 @@ namespace WindowsFormsApp1
         {
             Menu m = new Menu();
             m.Show();
+            this.Close();
         }
 
         private void btnRecarregar_Click(object sender, EventArgs e)

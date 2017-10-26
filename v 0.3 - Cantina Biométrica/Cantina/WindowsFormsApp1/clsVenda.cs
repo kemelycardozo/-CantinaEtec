@@ -14,6 +14,7 @@ namespace WindowsFormsApp1
         #region Propriedades
         private int id_Venda;
         private double valor;
+        private string produto;
         private DateTime data;
         #endregion
 
@@ -33,7 +34,10 @@ namespace WindowsFormsApp1
             get => data;
             set => data = value;
         }
-#endregion
+        public string Produto { get => produto; set => produto = value; }
+        #endregion
+
+        Dados objDados = new Dados();
 
         public List<clsProduto> EncontrarProdutosPorNome(string nome)
         {
@@ -56,6 +60,18 @@ namespace WindowsFormsApp1
 
             return result;
         }
+
+        //public DataTable BuscaCodigo()
+        //{
+
+        //    DataTable tblRecuperada = objDados.ConvertSqlToDataTable(
+        //        "SELECT * FROM Produto WHERE Nome = @Nome",
+        //        new MySqlParameter("@Nome", Produto));
+
+        //    return tblRecuperada;
+        //}
+
+
 
     }
 }

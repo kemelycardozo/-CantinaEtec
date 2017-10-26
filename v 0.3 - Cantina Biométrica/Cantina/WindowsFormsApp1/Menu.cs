@@ -21,13 +21,15 @@ namespace WindowsFormsApp1
         {
             Cadastrar c = new Cadastrar();
             c.Show();
-            Close();
+            
         }
 
         private void btnVenda_Click(object sender, EventArgs e)
         {
             Venda v = new Venda();
             v.Show();
+
+           
             
         }
 
@@ -35,6 +37,8 @@ namespace WindowsFormsApp1
         {
             Recarregar r = new Recarregar();
             r.Show();
+
+            
         }
 
         private void lblSair_Click(object sender, EventArgs e)
@@ -46,6 +50,8 @@ namespace WindowsFormsApp1
         {
             Saldo s = new Saldo();
             s.Show();
+
+            
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -59,6 +65,7 @@ namespace WindowsFormsApp1
         {
             CadastrarProduto cp = new CadastrarProduto();
             cp.Show();
+           
         }
     }
 }

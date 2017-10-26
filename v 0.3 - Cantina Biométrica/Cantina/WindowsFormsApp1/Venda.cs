@@ -18,14 +18,16 @@ namespace WindowsFormsApp1
             AutoCompleteText();
         }
 
-      
+        Dados objDados = new Dados();
+        clsVenda venda = new clsVenda();
 
         private void btnVolta_Click(object sender, EventArgs e)
         {
             Menu m = new Menu();
             m.Show();
-            Close();
-            
+
+            this.Close();
+
         }
 
         public void AutoCompleteText()
@@ -49,8 +51,20 @@ namespace WindowsFormsApp1
                     new clsVenda().EncontrarProdutosPorNome(t.Text).ForEach(p => collection.Add(p.Nome));
 
                     this.txtProduto.AutoCompleteCustomSource = collection;
+
+                    //venda.Produto = txtProduto.Text;
+                    
+                    //DataTable tblDados = venda.BuscaCodigo();
+                    
+                    //txtCodigo.Text = tblDados.Rows[1]["Cod"].ToString();
+
                 }
             }
         }
+
+        
+
+
     }
-}
+    }
+

@@ -23,6 +23,8 @@ namespace WindowsFormsApp1
         {
             Menu m = new Menu();
             m.Show();
+
+            this.Close();
         }
 
     }

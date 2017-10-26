@@ -20,11 +20,12 @@ namespace WindowsFormsApp1
         #region Botao Entrar
                 private void btnEntrar_Click(object sender, EventArgs e)
                 {
+                    
                     if (txtLogin.Text == "adm" && txtSenha.Text == "123")
                     {
                         Menu m = new Menu();
                         m.Show();
-                        
+                
                     }
                     else
                     {
@@ -33,6 +34,7 @@ namespace WindowsFormsApp1
                         txtSenha.Clear();
                         txtLogin.Focus();
                     }
+                    
            
                 }
         #endregion
